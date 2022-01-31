@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Nunito:wght@200;300;400;600;700&family=Oswald:wght@200;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+/* basic styles for black background and crosshair cursor */
+
+body {
+    background: #000;
+    height: 50vh;
+    margin: 0;
+}
+
+canvas {
+    cursor: crosshair;
+    display: block;
+    position: relative;
+}
+
+#mp3 {
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    opacity: 1;
+}
+
+.container {
+    color: #fff;
+    position: fixed;
+    /* top: 20px; */
+    right: 20px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: clip;
+    z-index: 1000;
+    top: 20px;
+    font-weight: bold;
+    -webkit-animation: my 700ms infinite;
+    -moz-animation: my 700ms infinite;
+    -o-animation: my 700ms infinite;
+    animation: my 700ms infinite;
+    display: none;
+}
+
+@-webkit-keyframes my {
+    0% {
+        color: #F8CD0A;
+    }
+    50% {
+        color: #fff;
+    }
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+@-moz-keyframes my {
+    0% {
+        color: #F8CD0A;
+    }
+    50% {
+        color: #fff;
+    }
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+@-o-keyframes my {
+    0% {
+        color: #F8CD0A;
+    }
+    50% {
+        color: #fff;
+    }
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+@keyframes my {
+    0% {
+        color: #F8CD0A;
+    }
+    50% {
+        color: #fff;
+    }
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+.container .new,
+.container .year,
+.container .happy {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    height: 9rem;
+    margin-bottom: 20px;
+}
+
+.container .happy p {
+    font-size: 8rem;
+    padding: 0 1rem;
+}
+
+.container .year p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 7rem;
+    padding: 0 .5rem;
+}
+
+.container .new p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 6rem;
+    padding: 0 .5rem;
+}
+
+.container h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Licorice', cursive;
+    font-size: 9rem;
+    height: 10rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.time {
+    position: fixed;
+    top: 250px;
+    left: 200px;
+    color: #fff;
+}
+
+.time .title {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.time #show {
+    color: #fff;
+    font-size: 100px;
+}
+
+@media (min-width: 280px) {
+    .container {
+        top: 10%;
+        right: 0;
+    }
+    .container .happy p {
+        font-size: 3rem;
+    }
+    .container .new p {
+        font-size: 2.5rem;
+    }
+    .container .year p {
+        font-size: 2rem;
+    }
+    .container h3 {
+        font-size: 2.5rem;
+    }
+    .time {
+        top: 40%;
+        left: 30%;
+    }
+    .time .title {
+        left: -100px;
+    }
+    .time #show {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 480px) {
+    .container .happy p {
+        font-size: 6rem;
+    }
+    .container .new p {
+        font-size: 5rem;
+    }
+    .container .year p {
+        font-size: 4rem;
+    }
+    .container h3 {
+        font-size: 5rem;
+    }
+    .time {
+        left: 10%;
+    }
+    .time #show {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .container .happy p {
+        font-size: 7rem;
+    }
+    .container .new p {
+        font-size: 6rem;
+    }
+    .container .year p {
+        font-size: 5rem;
+    }
+    .container h3 {
+        font-size: 5rem;
+    }
+    .time {
+        left: 15%;
+    }
+    .time #show {
+        font-size: 4.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .container .happy p {
+        font-size: 7rem;
+    }
+    .container .new p {
+        font-size: 6rem;
+    }
+    .container .year p {
+        font-size: 5rem;
+    }
+    .container h3 {
+        font-size: 6rem;
+    }
+    .time {
+        left: 20%;
+    }
+    .time #show {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 998px) {
+    .container .happy p {
+        font-size: 8rem;
+    }
+    .container .new p {
+        font-size: 7rem;
+    }
+    .container .year p {
+        font-size: 6rem;
+    }
+    .container h3 {
+        font-size: 6rem;
+    }
+    .time {
+        left: 20%;
+    }
+    .time #show {
+        font-size: 6rem;
+    }
+}
